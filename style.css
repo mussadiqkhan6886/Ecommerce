@@ -85,11 +85,12 @@ header{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%);
 }
 .wrapper{
     display: flex;
     width: 500vw;
+    transition: all 0.4s ease-in-out;
 }
 #imgMain{
     display: flex;
