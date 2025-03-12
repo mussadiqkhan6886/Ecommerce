@@ -86,6 +86,7 @@ header{
     background-position: top;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%);
+    overflow: hidden;
 }
 .wrapper{
     display: flex;
