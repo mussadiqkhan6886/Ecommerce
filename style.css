@@ -68,11 +68,65 @@ header{
 .listItem{
     cursor: pointer;
     font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
 }
 .listItem:hover{
-
+    scale: 1.1;
 }
 #searchIcon{
     width: 20px;
     cursor: pointer;
 }
+
+/* TOP MAIN */
+
+.top-main{
+    background-image: url('https://img.freepik.com/free-photo/3d-dark-grunge-display-background-with-smoky-atmosphere_1048-16218.jpg?ga=GA1.1.564882198.1736863859&semt=ais_hybrid');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 82%); */
+}
+.wrapper{
+    display: flex;
+    width: 500vw;
+}
+#imgMain{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.page{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.name,
+.price,
+.buy{
+    position: absolute;
+}
+.name{
+    font-size: 5rem;
+    right: 70px;
+    top: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+.price{
+    font-size: 3rem;
+    left: 70px;
+    top: 60px;
+    border: 1px solid whitesmoke;
+    padding: 0.3rem 0.7rem;
+
+}
+.buy{
+    bottom: 160px;
+    right: 50px;
+    font-size: 3rem;
+
+}
+
