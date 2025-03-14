@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
     min-height: 100vh;
@@ -128,7 +129,118 @@ header{
 .buy{
     bottom: 160px;
     right: 50px;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
 }
+.mid-main{
+    margin: 2em 0;
+}
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature{
+    padding: 0.5em;
+    width: 15%;
+    text-align: center;
+}
+.feature h4{
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin: 0.5em 0;
+}
+.features .img-feature{
+    width: 35%;
+}
+.desc p{
+    color: rgb(99, 98, 98);
+}
 
+.buy-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-buy-page{
+    width: 90%;
+}
+.left-buy-page img{
+    width: 100%;
+}
+.header h1{
+    font-size: 4.2rem;
+    margin-bottom: 1em;
+}
+.price-buy-page{
+    margin-bottom: 1em;
+}
+.price-buy-page p{
+    font-size: 2em;
+    font-weight: bold;
+}
+.desc-buy-page p{
+    color: rgb(105, 105, 105);
+}
+.colors{
+    display: flex;
+    margin: 16px 0;
+}
+#color1,
+#color2{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#color1{
+    background-color: black;
+}
+#color2{
+    background-color: darkblue;
+}
+.sizes{
+    display: flex;
+    margin: 16px 0;
+}
+.sizes .size{
+    border: 1px solid black;
+    padding: 5px 18px;
+    border-radius: 2px;
+    margin-right: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.button-buy-page{
+    margin-top: 15px;
+    float: right;
+}
+.button-buy-page button{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+.button-buy-page button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+.sizes .size:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.colors div{
+    transition: all 0.4s;
+}
+.colors div:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
