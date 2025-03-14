@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="top">
+        <div class="top" id="top">
             <div class="left">
                 <img src="/img/sneakers.png" alt="logo">
             </div>
@@ -41,31 +41,41 @@
                     <img src="/img/air.png" id="imgMain" alt="shoes image">
                     <div class="name">AIR FORCE <br> NEW <br> SEASON</div>
                     <div class="price">$199</div>
-                    <div class="buy">BUY NOW!</div>
+                    <a href="#product">    
+                        <button class="buy">BUY NOW!</button>
+                    </a>
                 </div>
                 <div class="page">
                     <img src="/img/jordan.png" id="imgMain" alt="shoes image">
                     <div class="name">JORDAN <br> NEW <br> SEASON</div>
                     <div class="price">$149</div>
-                    <div class="buy">BUY NOW!</div>
+                    <a href="#product">    
+                        <button class="buy">BUY NOW!</button>
+                    </a>
                 </div>
                 <div class="page">
                     <img src="/img/blazer.png" id="imgMain" alt="shoes image">
                     <div class="name">BLAZER <br> NEW <br> SEASON</div>
                     <div class="price">$109</div>
-                    <div class="buy">BUY NOW!</div>
+                    <a href="#product">    
+                        <button class="buy">BUY NOW!</button>
+                    </a>
                 </div>
                 <div class="page">
                     <img src="/img/crater.png" id="imgMain" alt="shoes image">
                     <div class="name">CRATER <br> NEW <br> SEASON</div>
                     <div class="price">$129</div>
-                    <div class="buy">BUY NOW!</div>
+                    <a href="#product">    
+                        <button class="buy">BUY NOW!</button>
+                    </a>
                 </div>
                 <div class="page">
                     <img src="/img/hippie.png" id="imgMain" alt="shoes image">
                     <div class="name">HIPPIE <br> NEW <br> SEASON</div>
                     <div class="price">$99</div>
-                    <div class="buy">BUY NOW!</div>
+                    <a href="#product">    
+                        <button class="buy">BUY NOW!</button>
+                    </a>
                 </div>
                 
             </div>
@@ -118,10 +128,10 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-main">
+        <div class="bottom-main" id="product">
             <div class="buy-page">
                 <div class="left-buy-page">
-                    <img src="img/air.png" alt="">
+                    <img id="currentImage" src="img/air.png" alt="">
                 </div>
                 <div class="right-buy-page">
                     <div class="header">
@@ -134,8 +144,8 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum earum alias voluptas laudantium, autem illo. Vitae nisi atque cupiditate molestiae.</p>
                     </div>
                     <div class="colors">
-                        <div id="color1"></div>
-                        <div id="color2"></div>
+                        <div id="color1" class="color"></div>
+                        <div id="color2" class="color"></div>
                     </div>
                     <div class="sizes">
                         <div class="size">42</div>
@@ -149,7 +159,117 @@
                 
             </div>
         </div>
+        <div class="popup">
+            <div class="details">
+                <h1 class="info">Personal Information</h1>
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" placeholder="John Wick" autocomplete="off">
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" placeholder="+92 318 999 9999" autocomplete="off">
+                <label for="address">Address: </label>
+                <input type="text" id="address" placeholder="islamabad" autocomplete="off">
+                <h1 class="info">Card Information</h1>
+                <div class="imgs">
+                    <img src="img/visa.png" alt="logo visa">
+                    <img src="img/master.png" alt="logo master card">
+                </div>
+                <input type="password" placeholder="Card Number" autocomplete="off">
+                <div class="cardInfo">
+                    <input type="text" placeholder="mm" autocomplete="off">
+                    <input type="text" placeholder="yy" autocomplete="off">
+                    <input type="text" placeholder="cvv" autocomplete="off">
+                </div>
+                <span class="close">X</span>
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+        <div class="gallery">
+            <div class="imageGallery">
+                <div class="imgItem">
+                    <h1>Be YourSelf</h1>
+                    <!-- will put img in here -->
+                     <div class="imgSoon"></div>
+                </div>
+                <div class="imgItem">
+                    <!-- will put img in here -->
+                     <div class="imgSoon"></div>
+                     <h1>This is the First Day of Your New Life </h1>
+                </div>
+                <div class="imgItem">
+                    <h1>Just Do it</h1>
+                    <!-- will put img in here -->
+                     <div class="imgSoon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="new">
+            <div></div>
+            <div id="newMiddle">
+                <h3>Winter New Arrivals</h3>
+                <h2>New Season</h2>
+                <h1>New Collection</h1>
+                <a href="#top">
+                    <button id="style">Choose Your Style</button>
+                </a>
+            </div>
+            <div></div>
+        </div>
     </main>
+    <footer>
+        <div class="content">
+            <div class="left-footer">
+                <div>
+                    <p class="headingFooter">About Us</p>
+                    <ul>
+                        <li>Company</li>
+                        <li>Contact</li>
+                        <li>Careers</li>
+                        <li>Affiliates</li>
+                        <li>Stores</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="headingFooter">Useful Links</p>
+                    <ul>
+                        <li>Support</li>
+                        <li>Refund</li>
+                        <li>FAQ</li>
+                        <li>Feedback</li>
+                        <li>Stories</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="headingFooter">Products</p>
+                    <ul>
+                        <li>Air Force</li>
+                        <li>Air Jordan</li>
+                        <li>Blazer</li>
+                        <li>Crater</li>
+                        <li>Hippie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="upper-footer">
+                    <p class="subscribe">Subscribe to our newsletter</p>
+                    <input type="text" autocomplete="off" placeholder="your@gmail.com">
+                    <button class="join">Join!</button>
+                </div>
+                <div class="mid-footer">
+                    <p class="follow">Follow us</p>
+                    <div class="imgs-footer">
+                        <img src="img/facebook.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        <img src="img/instagram.png" alt="">
+                        <img src="img/whatsapp.png" alt="">
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <p>Mussadiq khan, All rights Reserved 2025.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body> 
 </html>

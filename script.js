@@ -79,8 +79,55 @@ const products = [
     },
   ];
 
+let currentProduct = products[0];
+
+const currentImg = document.getElementById('currentImage');
+const currentTitle = document.getElementById('heading-buy-page');
+const currentPrice = document.getElementById('price-buy-page');
+const sizes = document.querySelectorAll('.size');
+const colors = document.querySelectorAll('.color');
+const buyingBtn = document.querySelector('#buying');
+const close = document.querySelector('.close');
+const popup = document.querySelector('.popup');
+
 navItems.forEach((item, index) => {
     item.addEventListener('click', () => {
         page.style.transform = `translateX(${-100 * index}vw)`;
+        currentProduct = products[index];
+        sizes.forEach(size => {
+          size.style.color = 'black';
+          size.style.background = 'white';
+        })
+        currentPrice.innerHTML = `$${currentProduct.price}`;
+        currentTitle.innerHTML = currentProduct.title;
+        currentImg.src = currentProduct.colors[0].img;
+        colors.forEach((color, index) => {
+          color.style.background = currentProduct.colors[index].code;
+        })
+    });
+    
+})
+
+colors.forEach((color, index) => {
+  color.addEventListener('click', () => {
+    currentImg.src = currentProduct.colors[index].img;
+  })
+})
+
+sizes.forEach((size, index) => {
+  size.addEventListener('click', () =>{
+    sizes.forEach(size => {
+      size.style.background = 'white';
+    size.style.color = 'black';
     })
+    size.style.background = 'black';
+    size.style.color = 'white';
+  })
+})
+
+buyingBtn.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+close.addEventListener('click', () => {
+  popup.style.display = 'none';
 })
