@@ -331,16 +331,24 @@ header{
 
 .imageGallery{
     display: flex;
-
 }
 .imgItem{
     flex: 1;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgItem h2{
+    font-size: 1.7rem;
+    text-align: left;
 }
 .imgSoon{
-    width: 90%;
-    background-color: red;
-    height: 250px;
+    width: 80%;
+}
+.imgSoon img{
+    width: 100%;
+    margin: 20px 0;
 }
 
 /* New Arrivals */
@@ -348,16 +356,12 @@ header{
 .new{
     display: flex;
     margin-top: 20px;
+    height: 450px;
 }
-.new div:first-child{
-    background-color: red;
-}
-.new div:last-child{
-    background-color: rgb(65, 250, 9);
-}
+
 .new div{
     background-color: black;
-    height: 400px;
+
 }
 .new div{
     flex: 1;
@@ -386,6 +390,13 @@ header{
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
+}
+
+.imgDivNew img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /* Footer */
